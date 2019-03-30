@@ -2,14 +2,13 @@
 <html>
 
 <head>
-    <title>Quiz</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>écologie au quotidien</title>
+    <title>Quiz</title>
     <meta charset="UTF-8">
-     <link rel="stylesheet" type="text/css" href="monstyle.css" />
+    <link rel="stylesheet" type="text/css" href="monstyle.css"/>
 </head>
 <body>
 
@@ -19,13 +18,66 @@
                 <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
                 <a href="http://projects.emerginov.lycee-ledantec.ac-rennes.fr/Ada_10/index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
                 <a href="http://projects.emerginov.lycee-ledantec.ac-rennes.fr/Ada_10/devenir-ecologique.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Devenir écologique</a>
-                <a href="http://projects.emerginov.lycee-ledantec.ac-rennes.fr/Ada_10/Quizz.html " class="w3-bar-item w3-button w3-padding-large w3-hide-small"> Quizzs écologie</a>
+                <a href="http://projects.emerginov.lycee-ledantec.ac-rennes.fr/Ada_10/Quizz.html " class="w3-bar-item w3-button w3-padding-large w3-hide-small"> Quizz écologie</a>
                 <a href="http://projects.emerginov.lycee-ledantec.ac-rennes.fr/Ada_10/Loisir.html " class="w3-bar-item w3-button w3-padding-large w3-hide-small"> Idées, loisirs récupérations</a>
             </div>
         </div>
+    <section id="quiz">
+        <form method="post">
+            <div id="questions">            
+                <div>
+                <p>
+                        Dans quelle poubelle doit-on mettre un sachet de biscuit?<br />
+                        <input type="radio" name="color" value="jaune" id="jaune" /> <label for="jaune">Poubelle jaune</label><br/>
+                        <input type="radio" name="color" value="verte" id="verte" /> <label for="verte">Poubelle verte</label><br/>
+                        <input type="radio" name="color" value="marron" id="marron" /> <label for="marron">Poubelle marron</label><br/>
+                        <a href="trier.html " title="Jaune">Réponse</a>
+                </p>
+                   </div>
+                <div>
+                <p>
+                        Au lieu de prendre seul(e) la voiture quel autre moyen de transport est-il possible d'utiliser ?<br />
+                        <input type="radio" name="transport" value="bus" id="bus" /> <label for="bus">Bus</label><br/>
+                        <input type="radio" name="transport" value="covoiturage" id="covoiturage" /> <label for="covoiturage">Covoiturage</label><br/>
+                        <input type="radio" name="transport" value="vélo" id="vélo" /> <label for="vélo">Vélo</label><br/>
+                </p>
+                </div>
+                <div>
+                <p>
+                       Comment pouvons nous économiser l'eau ?<br />
+                       <input type="radio" name="eau" value="prendre_un_bain" id="prendre_un_bain" /> <label for="prendre_un_bain">En prennant un bain.</label><br/>
+                       <input type="radio" name="eau" value="" id="laisser_couler_l'eau" /> <label for="laisser_couler_l'eau">En évitant de faire couler l'eau lorsqu'on se brosse les dents</label><br/>
+                       <input type="radio" name="eau" value="eau_de_pluie" id="eau_de_pluie" /> <label for="eau_de_pluie">Utiliser l'eau de pluie</label><br/>
+                </p>
+                </div>
+                <div>
+                <p>
+                        L'air intérieur (dans les habitations) est-il plus ou moins pollué que l'air extérieur ?<br />
+                       <input type="radio" name="air" value="air_interieur_plus" id="air_interieur_plus" /> <label for="air_interieur_plus">L'air interieur est plus pollué</label><br/>
+                       <input type="radio" name="air" value="air_interieur_pareil" id="air_interieur_pareil" /> <label for="air_interieur_pareil">L'air interieur est pareil qu'à l'exterieur</label><br/>
+                       <input type="radio" name="air" value="air_interieur_moins" id="air_interieur_moins" /> <label for="air_interieur_moins">L'air interieur est moins pollué </label><br/>
+                </p>
+                </div>
+                <div>
+                <p>
+                         La diminution de la quantité de CO2 émise par les voitures est-elle une bonne solution pour lutter contre le réchauffement climatique ?<br />
+                       <input type="radio" name="quantité" value="oui" id="oui" /> <label for="oui">Oui c'est une bonne solution</label><br/>
+                       <input type="radio" name="quantité" value="non" id="non" /> <label for="non">Non ça ne l'est pas</label><br/>
+                       <input type="radio" name="quantité" value="oui_et_non" id="oui_et_non" /> <label for="oui_et_non">Les deux en même temps car ce n'est pas la solution.</label><br/>
+                </p>
+                </div>
+                <div>
+                <p>
+                        Une des conséquences prévisibles du réchauffement climatique est la montée du niveau des mers et des océans. Est-ce exact ?<br />
+                       <input type="radio" name="quantité" value="oui" id="oui" /> <label for="oui">Oui les niveaux augmente</label><br/>
+                       <input type="radio" name="quantité" value="non" id="non" /> <label for="non">Non les niveaux n'ont pas bougés</label><br/>
+                       <input type="radio" name="quantité" value="oui_et_non" id="oui_et_non" /> <label for="oui_et_non">Oui et non ça depend du temps</label><br/>
+                </p>
+                </div>
+            </div>
+        </form>
+    </section> 
         
 </body>
-
-<footer></footer>
-s
+<footer> 4ème édition ADA LOVELACE </footer>
 </html>
